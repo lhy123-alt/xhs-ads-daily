@@ -52,7 +52,7 @@
       next.disabled = dates.indexOf(date) >= dates.length - 1;
       latestBadge.textContent = date === latest ? "最新" : "";
       status.classList.remove("hidden");
-      frame.src = "history/" + date + ".html?v=20260730-creator-merge";
+      frame.src = "history/" + date + ".html?v=20260730-creator-merge-all";
       direct.href = "?date=" + date;
       direct.dataset.url = new URL("?date=" + date, location.href).href;
       if (push) history.pushState({ date }, "", "?date=" + date);
